@@ -1,0 +1,139 @@
+.App {
+  text-align: center;
+}
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  min-width: 375px;
+}
+
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color: #ffe45e;
+  cursor: default;
+  user-select: none;
+  color: black;
+}
+
+.cell:hover {
+  background-color: #fff8e8;
+}
+
+.header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.outer {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.selectSymbol {
+  display: inline;
+  background-color: #f4caca;
+  padding: 1rem;
+  margin: 0.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  color: rgb(159, 159, 159);
+  user-select: none;
+}
+.symbolActive {
+  background-color: rgb(250, 217, 217);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 5px 15px;
+  color: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.player {
+  background-color: #7fc8f8;
+  flex: 2;
+  margin-left: 3rem;
+  padding-top: 3rem;
+  color: white;
+}
+
+.board {
+  flex: 4;
+}
+.canvasStyle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+}
+
+.inputStyle {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  justify-content: center;
+  border: none;
+  border-radius: 0.5rem;
+}
+.scoreBoard {
+  flex: 2;
+  background-color: #ff6392;
+  margin-right: 3rem;
+  padding-top: 3rem;
+  color: white;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+  .board {
+    order: 3;
+  }
+  .player {
+    width: 373px;
+    padding-bottom: 2rem;
+    order: 1;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .scoreBoard {
+    width: 373px;
+    padding-bottom: 2rem;
+    order: 2;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: white;
+  }
+}
+
+.buttons {
+  background-color: #7fc8f8;
+  padding: 0.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  border: 1px solid white;
+  cursor: pointer;
+  color: white;
+}
+.buttons:hover {
+  color: #7fc8f8;
+  background-color: white;
+}
