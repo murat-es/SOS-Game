@@ -89,6 +89,9 @@
   color: white;
 }
 @media screen and (max-width: 900px) {
+  .App {
+    position: relative;
+  }
   .container {
     flex-direction: column;
   }
@@ -97,27 +100,29 @@
   }
   .player {
     width: 373px;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     order: 1;
     margin-left: auto;
     margin-right: auto;
   }
   .scoreBoard {
     width: 373px;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     order: 2;
     margin-left: auto;
     margin-right: auto;
   }
 
   .header {
-    position: fixed;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
+    bottom: 30px;
+    z-index: 1;
     text-align: center;
-    background: white;
+    background: rgb(0, 149, 255);
   }
 }
 
